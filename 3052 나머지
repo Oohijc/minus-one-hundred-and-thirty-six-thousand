@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int a[10]={0};
+    int cnt[42]={0};
+    int tnd=0,po=0;
+    for(int i=0; i<10 ; i++)
+        {
+            scanf("%d",&a[i]);
+        }
+
+    for(int i=0; i<10 ; i++)
+        {
+            tnd = a[i]%42;
+            cnt[tnd] = cnt[tnd] +1;
+        }
+
+    for(int i=0; i<42 ; i++)
+    {
+        if(cnt[i] >= 1)
+    {
+        po++;
+    }
+    }
+
+    printf("%d",po);
+    
+
+    
+    return 0;
+}
