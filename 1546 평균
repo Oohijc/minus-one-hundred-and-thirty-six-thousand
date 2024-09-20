@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    
+    int x=0,n=0,max=0;
+    double as =0;
+
+    scanf("%d",&n);
+
+    for(int i=0; i<n ; i++)
+        {
+            scanf("%d ",&x);
+            as += x;
+            if(max < x)
+            {
+                max = x;
+            }
+            
+            
+            
+        }
+    
+    as = as/max*100/n;
+
+    printf("%lf",as);
+    return 0;
+}
